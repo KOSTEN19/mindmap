@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.98.0">
+    <title>MindMap Project</title>
+<link href="{% static 'mindmap.css' %}" rel="stylesheet"> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js" type="text/javascript"></script>
+   <link href="{% static 'bootstrap_min.css' %}" rel="stylesheet">
+    <link href="{% static 'get_mindmap.css' %}" rel="stylesheet"> 
+    <script  src= "{% static 'mindmap.js' %}" ></script>
+  <script  src= "{% static 'raphael.js' %}" ></script>
+
+    
+</head>
+
+<body class="p-3 m-0 border-0 bd-example">
+
+    <nav class="navbar navbar-expand-lg bg-light" style = "border-radius: 50px;" z-index : 0>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">File</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+           <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href = "/logout">Log out</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <ul>
+      <li><a >CTF</a>
+        <ul>
+          <li><a href="#" >WEB</a></li>
+          <li><a href="#" >CRYPTO</a></li>
+          <li><a href="#" >UCUCUGA FROM MENAD</a></li>
+          <li><a href="#" >FORENSIC</a></li>
+          <li><a href="#">MISK</a>
+            <ul>
+              <li><a href="#"  class="icon twitter" title="9">CRYPTO/FORENSIC</a></li> 
+              <li><a href="#"  class="closebtn" title="13">STEGA/OSINT</a>
+                <ul>
+                <li><a href="#" title="A">UGUGUGA</a></li> 
+                <li><a href="#" title="C">UCUCCCUUCUUCUCUUCUGA</a></li> 
+                </ul>
+              </li> 
+            </ul>
+          </li>
+      
+          
+        </ul>
+      </li>
+    </ul>
+</body>
+</body>
+</html>

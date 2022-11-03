@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.98.0">
+  <title>MindMap Project</title>
+  <link href="{% static 'mindmap.css' %}" rel="stylesheet">
+
+  <link href="{% static 'bootstrap_min.css' %}" rel="stylesheet">
+  <link href="{% static 'get_mindmap.css' %}" rel="stylesheet">
+  <script src="{% static 'mindmap.js' %}"></script>
+  <script src="{% static 'raphael.js' %}"></script>
+
+
+</head>
+{% load static %}
+<script src="{% static 'mindmap.js' %}"></script>
+<link href="{% static 'mindmap.css' %}" rel="stylesheet">
+<div class = "pole">
+<form method="POST" enctype="multipart/form-data" action='/' id='form'>
+  {% csrf_token %}
+  <div class="drop-container">
+    <div class="drop">
+      <i class="fa-solid fa-photo-film icon"></i>
+      <span class="text">
+        Drag and drop your documents, photos, and video here.
+      </span>
+      <div class="or-con">
+        <span class="line"></span>
+        <span class="or">OR</span>
+        <span class="line"></span>
+      </div>
+      <label for="file-upload">Browse Files</label>
+      <br>
+      <input type="file" id="file-upload" class="file-input" name="mindmap" multiple />
+    </div>
+    <div class="progress"> </div>
+  </div>
+</form>
+</div>
+<script src="{% static 'input_file.js' %}"></script>
+
+</body>
+
+</html>
